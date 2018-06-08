@@ -2,22 +2,35 @@ html {
   font-size: 62.5%; }
 
 body {
-  margin: 0; }
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px; }
 
 header {
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px;
   background-color: #5fc0cd;
   font-size: 1.8rem;
   color: #ffffff;
-  text-align: center;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   padding: 1rem 0;
-  background-image: url(images/00.png);
-  background-size: 1rem;
-  background-repeat: no-repeat;
-  background-position: 2rem 1.2rem; }
+  z-index: 9999; }
+  header a {
+    text-decoration: none;
+    margin-left: 1rem; }
+    header a img {
+      width: 1rem;
+      vertical-align: middle; }
+  header span {
+    display: inline-block;
+    padding-left: 36%; }
+
+.main {
+  margin-bottom: 8rem; }
 
 .top {
   background-image: url(images/01.png);
@@ -55,15 +68,11 @@ h1 {
   font-size: 1.8rem;
   border-left: 0.2rem solid #5fc0cd; }
 
-hr {
-  margin-bottom: 0;
-  border-width: 0.15rem;
-  color: #e1e5e7;
-  border-top-width: 0; }
-
 ul {
   padding-left: 2rem;
-  margin: 0 0 6rem 0; }
+  margin: 0;
+  border-bottom: 0.1rem #e1e5e7 solid;
+  border-top: 0.1rem #e1e5e7 solid; }
 
 ul li {
   list-style-type: none;
@@ -73,18 +82,19 @@ ul li {
   display: flex;
   align-items: center; }
 
+.self {
+  border-bottom: 0; }
+
 .ps2 {
   margin-left: 1rem;
   padding-left: 1rem; }
 
-.ps4, .ps6, .ps8, .ps10 {
-  margin-left: 1rem;
-  padding-left: 1rem;
-  border-left: 0.1rem #e1e5e7 solid; }
-
 .ps3, .ps5, .ps7, .ps9 {
   color: #999999;
-  flex-shrink: 0; }
+  flex-shrink: 0;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 0.1rem #e1e5e7 solid; }
 
 .ps8 {
   color: #e26163; }
@@ -99,7 +109,10 @@ div.footer {
   bottom: 0;
   text-align: center;
   padding: 1rem;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px; }
 
 button {
   font-size: 1.8rem;

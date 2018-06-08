@@ -1,13 +1,36 @@
 html{font-size: 62.5%; }
-body{margin:0;}
+body{
+	margin:0 auto;
+	max-width: 780px;
+	min-width: 320px;
+}
 $background-color1:#5fc0cd;
 $font-color1:#ffffff;
 header{
+	margin:0 auto;
+	max-width: 780px;
+	min-width: 320px;
 	background-color: $background-color1;font-size: 1.8rem;color: $font-color1;
-	text-align: center;position: fixed;left: 0;top: 0;right: 0;
+	position: fixed;left: 0;top: 0;right: 0;
 	padding: 1rem 0;
-	background-image: url(images/00.png);
-	background-size: 1rem;background-repeat:no-repeat;background-position:2rem 1.2rem;
+	// background-image: url(images/00.png);
+	// background-size: 1rem;background-repeat:no-repeat;background-position:2rem 1.2rem;
+	z-index: 9999;
+	a{
+		text-decoration: none;
+		margin-left:1rem;
+		img{
+			width:1rem;
+			vertical-align: middle;
+		}
+	}
+	span{
+		display:inline-block;
+		padding-left:36%;
+	}
+}
+.main{
+	margin-bottom: 8rem;
 }
 .top{
 	background-image: url(images/01.png);background-repeat: no-repeat;
@@ -34,22 +57,37 @@ header{
 h1{font-weight: normal; padding-left: 1rem;margin-left: 2rem;font-size: 1.8rem;
 	border-left: 0.2rem solid $background-color1;
 }
-hr{margin-bottom: 0;border-width:0.15rem;color: #e1e5e7;border-top-width: 0; }
-ul{padding-left: 2rem;margin:0 0 6rem 0;}
+ul{padding-left: 2rem;
+	margin:0;
+	border-bottom:0.1rem #e1e5e7 solid;
+	border-top:0.1rem #e1e5e7 solid;
+}
 ul{
 	li{list-style-type: none;font-size: 1.5rem;padding: 1rem 0; 
-		border-bottom: solid 0.1rem #e1e5e7;display: flex;align-items: center;}
+		border-bottom: solid 0.1rem #e1e5e7;
+		display: flex;align-items: center;
+	}
+}
+.self{
+	border-bottom:0;
 }
 .ps2{margin-left:1rem;padding-left: 1rem;}
-.ps4,.ps6,.ps8,.ps10 {margin-left:1rem;padding-left: 1rem;
-	border-left: 0.1rem #e1e5e7 solid;}
-.ps3,.ps5,.ps7,.ps9{color:#999999; flex-shrink: 0;}
+.ps3,.ps5,.ps7,.ps9{
+	color:#999999; 
+	flex-shrink: 0;
+	padding-right: 1rem;
+	margin-right: 1rem;
+	border-right: 0.1rem #e1e5e7 solid;
+}
 .ps8{color: #e26163;}
 ul>li>span>img{width: 1.3rem;}
 
 div.footer{
 	position: fixed;left: 0;right: 0;bottom: 0;text-align: center;
 	padding: 1rem;background-color: $font-color1;
+	margin:0 auto;
+	max-width: 780px;
+	min-width: 320px;
 }
 button{
 	font-size: 1.8rem;

@@ -1,11 +1,17 @@
 html{
 	font-size: 62.5%;
 }
-*{
-	margin:0;padding:0;
+@mixin maxWidth{
+	margin:0 auto;
+	max-width: 780px;
+	min-width: 320px;
+}
+body{
+	@include maxWidth;
 }
 $color-gray:#ffffff;
 header{
+	@include maxWidth;
 	background-color: #5fc0cd;
 	padding: 0.5rem 0;
 	text-align: center;
@@ -36,6 +42,7 @@ header{
        }
 
 .top{
+	@include maxWidth;
 	height: 4rem;
 	padding:1rem 0; 
 	border-bottom: solid #e2e2e2 0.1rem;
@@ -77,7 +84,9 @@ header{
 	margin: 8.5rem 0;
 	font-size: 1.7rem;
 }
-
+ul{
+	list-style-type:none;
+}
 .option{
 	padding:1rem;
 	border-bottom: solid #e2e2e2 0.1rem;
@@ -160,6 +169,7 @@ footer{
     border-top: solid #e2e2e2 0.1rem;
     display: flex;
     align-items: center;
+    @include maxWidth;
 }
 
 .footer1{

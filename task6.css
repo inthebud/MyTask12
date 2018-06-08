@@ -1,11 +1,15 @@
 html {
   font-size: 62.5%; }
 
-* {
-  margin: 0;
-  padding: 0; }
+body {
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px; }
 
 header {
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px;
   background-color: #5fc0cd;
   padding: 0.5rem 0;
   text-align: center;
@@ -47,6 +51,9 @@ header {
   background-color: #5fc0cd; }
 
 .top {
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px;
   height: 4rem;
   padding: 1rem 0;
   border-bottom: solid #e2e2e2 0.1rem;
@@ -85,6 +92,9 @@ header {
 .main {
   margin: 8.5rem 0;
   font-size: 1.7rem; }
+
+ul {
+  list-style-type: none; }
 
 .option {
   padding: 1rem;
@@ -158,7 +168,10 @@ footer {
   bottom: 0;
   border-top: solid #e2e2e2 0.1rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px; }
 
 .footer1 {
   margin-left: 10%;
