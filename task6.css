@@ -40,6 +40,7 @@ header {
 .icon1 {
   height: 3rem;
   width: 3rem;
+  outline: none;
   background-image: url(images/xbt.png);
   background-repeat: no-repeat;
   background-position: -2rem -3rem;
@@ -52,11 +53,13 @@ header {
 
 .top {
   margin: 0 auto;
-  max-width: 780px;
+  max-width: 778px;
   min-width: 320px;
-  height: 4rem;
-  padding: 1rem 0;
+  height: 2.5rem;
+  padding: 0.5rem 0;
   border-bottom: solid #e2e2e2 0.1rem;
+  border-left: solid #e2e2e2 1px;
+  border-right: solid #e2e2e2 1px;
   position: fixed;
   top: 4.5rem;
   left: 0;
@@ -67,34 +70,69 @@ header {
   display: flex; }
 
 .dropdown {
-  width: 33.33%;
-  text-align: center; }
+  position: relative;
+  width: 33.3333%;
+  font-size: 1.6rem; }
 
-.btn {
-  width: 100%;
-  border-style: solid;
-  border-radius: 0;
-  border-width: 0;
+.dropbtn {
+  font-size: 1.6rem;
+  background-color: white;
   color: #a2a2a2;
+  border: none;
+  width: 99%;
   outline: none;
-  background-color: #ffffff; }
+  padding: 0.3rem 0; }
 
-#dropdownMenu2 {
-  border-width: 0 0.1rem; }
+.dropdown-middle {
+  border-left: solid 1px #e2e2e2;
+  border-right: solid 1px #e2e2e2; }
 
-.btn .caret {
-  margin-left: 2rem; }
+.caret {
+  display: inline-block;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #a2a2a2;
+  margin-left: 10%; }
 
 .dropdown-menu {
+  display: none;
+  margin-top: 3px;
+  position: absolute;
   text-align: center;
-  min-width: 100%; }
+  width: 99%;
+  background-color: white;
+  border: solid 1px #e2e2e2; }
+  .dropdown-menu div {
+    padding: 3px 0; }
+    .dropdown-menu div a {
+      text-decoration: none;
+      color: #a2a2a2;
+      text-align: center; }
+  .dropdown-menu div:hover {
+    background-color: #e2e2e2;
+    color: black; }
+    .dropdown-menu div:hover a {
+      color: black; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.dropdown:hover .dropbtn {
+  background-color: #e2e2e2;
+  color: black; }
+  .dropdown:hover .dropbtn .caret {
+    border-top: 8px solid black; }
 
 .main {
-  margin: 8.5rem 0;
-  font-size: 1.7rem; }
+  margin: 8rem 0 0 0;
+  padding-bottom: 8rem;
+  font-size: 1.7rem;
+  border-left: solid #e2e2e2 1px;
+  border-right: solid #e2e2e2 1px; }
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0; }
 
 .option {
   padding: 1rem;
@@ -170,8 +208,11 @@ footer {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  max-width: 780px;
-  min-width: 320px; }
+  max-width: 778px;
+  min-width: 320px;
+  border-left: solid #e2e2e2 1px;
+  border-right: solid #e2e2e2 1px;
+  padding: 5px 0; }
 
 .footer1 {
   margin-left: 10%;
